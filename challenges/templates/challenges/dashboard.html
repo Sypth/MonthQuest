@@ -2,9 +2,12 @@
 {% load static %}
 
     {% block page_title %}All Challenges{% endblock %}
+
     {% block css_files %}
         <link rel="stylesheet" href="{% static "challenges/challenges.css" %}">
+        <link rel="stylesheet" href="{% static "challenges/includes/header.css" %}">
     {% endblock %}
+
     {% block content %}
         {% include "challenges/includes/header.html" %}
         <ul>
